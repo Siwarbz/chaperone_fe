@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "927234170716",
+    "project_id": "fysali",
+    "storage_bucket": "fysali.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:927234170716:android:99a1f116324b8a4b2b2b99",
+        "android_client_info": {
+          "package_name": "com.chaperone"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqXu8ZNbY2mn0fOJ3HhATOBaf_zOwv3N4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
