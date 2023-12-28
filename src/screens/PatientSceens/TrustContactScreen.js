@@ -62,7 +62,7 @@ const TrustContact = () => {
         AsyncStorage.getItem('user_id').then(id => {
           setPatientId(id);
           axios
-            .get(`${IP}/api/patient/getAllIamChaperon/${id}`)
+            .get(`${azure}/api/patient/getAllIamChaperon/${id}`)
             .then(response => {
               setTrustByContactList(response.data.trustContactInfos);
               console.log('trustBycontactList :', trustByContactList);

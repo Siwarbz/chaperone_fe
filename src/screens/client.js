@@ -2,9 +2,9 @@
 import axios from 'axios';
 
 const client = axios.create({
-  baseURL: 'https://chaperonebackend.azurewebsites.net',
+  baseURL: 'http://192.168.1.7:3000',
 });
 export default client;
 
 export const IP = 'http://192.168.1.6:3000';
-export const azure = 'https://chaperonebackend.azurewebsites.net';
+export const azure = 'http://192.168.1.7:3000';

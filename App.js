@@ -14,8 +14,8 @@ import {Init} from './src/store/actions';
 import {useNavigation} from '@react-navigation/native';
 import * as RootNavigation from './RootNavigation';
 
-import {ScreenProvider} from './screenProvider';
-import {useScreen} from './screenProvider';
+//import {ScreenProvider} from './screenProvider';
+//import {useScreen} from './screenProvider';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 //
 import Onboarding from './src/screens/AuthScreens/Onboarding';
@@ -51,7 +51,7 @@ const RootsNavigation = () => {
   const user_type = useSelector(state => state.Reducers.auth_user_type);
   console.log(user_type);
   const dispatch = useDispatch();
-  const {setCurrentScreen} = useScreen();
+  //const {setCurrentScreen} = useScreen();
 
   const [loading, setLoading] = useState(true);
   const [isDeepLinkDetected, setIsDeepLinkDetected] = useState(false); // State to track the presence of deep link
@@ -76,7 +76,7 @@ const RootsNavigation = () => {
         console.log('deep linking 2');
         Alert.alert(initialUrl);
         setIsDeepLinkDetected(true);
-        /*
+
         const searchParams = initialUrl.searchParams;
         const token = searchParams.get('token');
         const userID = searchParams.get('id');
@@ -103,9 +103,7 @@ const RootsNavigation = () => {
 export default function App() {
   return (
     <Provider store={store}>
-      <ScreenProvider>
-        <RootsNavigation />
-      </ScreenProvider>
+      <RootsNavigation />
     </Provider>
   );
 }
