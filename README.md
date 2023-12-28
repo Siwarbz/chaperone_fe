@@ -5,8 +5,10 @@ Welcome to the Chaperone React Native App! This guide will help you set up and u
 ## Setup Instructions 🛠️
 
 1. Verify your IP address in cmd with the command:
-ipconfig
 
+```bash
+ipconfig
+```
 
 2. Paste the IPv4 address in: `Chaperone/src/screens/client.js`
 
@@ -15,8 +17,11 @@ ipconfig
 - In the other terminal, navigate to `api`
 
 4. In the `api` directory, run:
+ ```bash
 nodemon server.js
-5. In the `Chaperone` directory, run:
+
+```
+6. In the `Chaperone` directory, run:
    
 ## Testing Accounts 👩‍⚕️👨‍⚕️
 
